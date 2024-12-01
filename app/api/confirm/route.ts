@@ -10,6 +10,7 @@ export async function GET(request: Request) {
     const token = searchParams.get('token')
 
     if (!token) {
+      console.error('No token provided')
       return NextResponse.json({ message: 'Invalid confirmation token' }, { status: 400 })
     }
 
@@ -23,11 +24,13 @@ export async function GET(request: Request) {
     })
 
     if (!searchResponse.ok) {
+      console.error('Failed to find contact:', await searchResponse.text())
       throw new Error('Failed to find contact')
     }
 
     const searchData = await searchResponse.json()
     if (searchData.contacts.length === 0) {
+      console.error('No contact found with the given token')
       return NextResponse.json({ message: 'Invalid confirmation token' }, { status: 400 })
     }
 
@@ -52,6 +55,7 @@ export async function GET(request: Request) {
     })
 
     if (!updateContactResponse.ok) {
+      console.error('Failed to update contact:', await updateContactResponse.text())
       throw new Error('Failed to update contact')
     }
 
@@ -109,4 +113,3 @@ export async function GET(request: Request) {
     return NextResponse.redirect(`${APP_URL}/error`)
   }
 }
-
