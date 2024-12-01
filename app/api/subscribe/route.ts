@@ -71,43 +71,52 @@ export async function POST(request: Request) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Our Newsletter!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Newsletter!</title>
 </head>
-<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px;">
-  <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f8f8f8; border-radius: 10px; overflow: hidden;">
-    <tr>
-      <td style="padding: 40px 20px; text-align: center; background-color: #6366f1;">
-        <h1 style="color: #ffffff; margin: 0; font-size: 28px;">Welcome, ${name}!</h1>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 30px 20px;">
-        <p style="font-size: 18px; margin-bottom: 20px;">Thank you for subscribing to our newsletter!</p>
-        <p style="font-size: 16px; margin-bottom: 20px;">We're thrilled to have you on board and can't wait to share exciting content with you. Here's what you can expect:</p>
-        <ul style="font-size: 16px; margin-bottom: 20px; padding-left: 20px;">
-          <li>Insightful articles on the latest tech trends</li>
-          <li>Exclusive tips and tricks to boost your productivity</li>
-          <li>Special offers and early access to new features</li>
-        </ul>
-        <p style="font-size: 16px; margin-bottom: 30px;">Stay tuned for our upcoming newsletter – it's packed with valuable content you won't want to miss!</p>
-        <div style="text-align: center;">
-          <a href="https://mridulthareja.com" style="display: inline-block; background-color: #6366f1; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: bold;">Visit Our Website</a>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 20px; text-align: center; background-color: #e5e7eb; font-size: 14px;">
-        <p style="margin: 0;">Best regards,<br><strong>Mridul Thareja</strong></p>
-        <p style="margin: 10px 0 0;">Follow us on: 
-          <a href="#" style="color: #6366f1; text-decoration: none;">Twitter</a> | 
-          <a href="#" style="color: #6366f1; text-decoration: none;">LinkedIn</a> | 
-          <a href="#" style="color: #6366f1; text-decoration: none;">GitHub</a>
-        </p>
-      </td>
-    </tr>
-  </table>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #000;">
+    <table cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <tr>
+            <td style="padding: 40px 0; text-align: center; background-color: #000;">
+                <img src="https://i.imghippo.com/files/Ik4170ow.webp" alt="Logo" style="max-width: 150px;">
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 40px 30px;">
+                <h1 style="color: #333333; font-size: 28px; margin-bottom: 20px;">Welcome, ${name}!</h1>
+                <p style="color: #666666; font-size: 16px; line-height: 1.6; margin-bottom: 20px;">Thank you for subscribing to our newsletter. We're excited to have you join our community!</p>
+                <p style="color: #666666; font-size: 16px; line-height: 1.6; margin-bottom: 20px;">Here's what you can look forward to:</p>
+                <ul style="color: #666666; font-size: 16px; line-height: 1.6; margin-bottom: 20px; padding-left: 20px;">
+                    <li>Cutting-edge tech insights</li>
+                    <li>Productivity hacks and tips</li>
+                    <li>Exclusive offers and early access</li>
+                    <li>Industry news and trends</li>
+                </ul>
+                <p style="color: #666666; font-size: 16px; line-height: 1.6; margin-bottom: 30px;">Stay tuned for our first newsletter – it's packed with valuable content you won't want to miss!</p>
+                <a href="https://innvision.agency/" style="display: inline-block; background-color: #000; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: bold;">Explore Our Website</a>
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color: #f8f8f8; padding: 30px;">
+                <table cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td style="text-align: center; padding-bottom: 20px;">
+                            <a href="https://www.linkedin.com/in/mridulthareja/" style="display: inline-block; margin: 0 10px;"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Linkedin" style="width: 30px;"></a>
+                            <a href="https://x.com/Innvisionagency" style="display: inline-block; margin: 0 10px;"><img src="https://icon2.cleanpng.com/20240119/ta/transparent-x-logo-logo-brand-identity-company-organization-black-background-white-x-logo-for-1710915881389.webp" alt="Twitter" style="width: 30px;"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color: #999999; font-size: 14px; text-align: center;">
+                            <p style="margin: 0;">© 2024 Mridul Thareja. All rights reserved.</p>
+                            <p style="margin: 10px 0 0;">You're receiving this email because you signed up for our newsletter.</p>
+                            <p style="margin: 10px 0 0;">Our mailing address is: hi@mridulthareja.com</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
 `
